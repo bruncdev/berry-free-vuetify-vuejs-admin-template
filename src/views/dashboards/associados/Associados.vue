@@ -17,7 +17,7 @@ const items = ref(
   }))
 );
 
-const page = ref({ title: 'Associadoss' });
+const page = ref({ title: 'Associados' });
 const breadcrumbs = ref([
   {
     title: 'Associados',
@@ -61,7 +61,7 @@ const totalPages = computed(() => Math.ceil(items.value.length / itemsPerPage));
           {{ item['Data de Nascimento'] }}
       </template>
       <template #item.actions="{ item }">
-        <router-link :to="`/dashboard/associados/${item.id}`" class="text--primary">
+        <router-link :to="`/dashboard/associados/${item.id}`" style="text-decoration: none; color: inherit;">
           <EyeIcon class="icon" />
         </router-link>
       </template>
@@ -76,14 +76,16 @@ const totalPages = computed(() => Math.ceil(items.value.length / itemsPerPage));
           sm="6"
           md="4"
         >
-          <v-card class="mb-4 rounded">
-            <v-card-title>{{ item.Nome }}</v-card-title>
-            <v-card-subtitle>CPF: {{ item.CPF }}</v-card-subtitle>
-            <v-card-text>
-              <p>Data de Nascimento: {{ item['Data de Nascimento'] }}</p>
-              <p>CRM: {{ item.CRM }}</p>
-            </v-card-text>
-          </v-card>
+          <router-link :to="`/dashboard/associados/${item.id}`" class="v-link" style="text-decoration: none; color: inherit;">
+            <v-card class="mb-4 rounded clickable-card">
+              <v-card-title>{{ item.Nome }}</v-card-title>
+              <v-card-subtitle>CPF: {{ item.CPF }}</v-card-subtitle>
+              <v-card-text>
+                <p>Data de Nascimento: {{ item['Data de Nascimento'] }}</p>
+                <p>CRM: {{ item.CRM }}</p>
+              </v-card-text>
+            </v-card>
+          </router-link>
         </v-col>
       </v-row>
     </v-container>
