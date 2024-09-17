@@ -5,10 +5,11 @@ import { ref, computed, onBeforeMount } from 'vue';
 import { useDisplay } from 'vuetify';
 import { associadosData } from '@/utils/helpers/associados-data';
 import BaseBreadcrumb from '@/components/shared/BaseBreadcrumb.vue';
-import { useRouter } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import UiParentCard from '@/components/shared/UiParentCard.vue';
 
 const { smAndDown } = useDisplay();
+const route = useRoute();
 const router = useRouter();
 
 interface Associado {
@@ -21,10 +22,14 @@ interface Associado {
 }
 
 function getAssociado(id: number): Associado | undefined {
-  return associadosData.find(associado => associado.id === id);
+  const associado = associadosData.find(associado => associado.id === id);
+  if (associado) {
+    associado['Data de Nascimento'] = new Date(associado['Data de Nascimento']).toLocaleDateString('pt-BR');;
+  }
+  return associado;
 }
 
-const id = Number(router.currentRoute.value.params.id);
+const id = Number(route.params.id);
 
 const associadoData = ref<Associado | undefined>(undefined);
 
@@ -41,10 +46,19 @@ const breadcrumbs = computed(() => [
   },
   {
     title: associadoData.value?.Nome || 'Detalhes',
-    disabled: false,
+    disabled: true,
     href: `/dashboard/associados/${id}`
   },
 ]);
+
+const isMobile = computed(() => smAndDown.value);
+
+const saveChanges = () => {
+  // Implement save logic here
+  console.log('Changes saved:', associadoData.value);
+  // Optionally navigate back to the list
+  router.push('/dashboard/associados');
+};
 </script>
 
 <template>
@@ -52,17 +66,63 @@ const breadcrumbs = computed(() => [
 
   <v-row>
     <v-col cols="12" md="12">
-      <UiParentCard title="Detalhes do Associado">
+      <UiParentCard :title="associadoData?.Nome || 'Detalhes do Associado'">
         <div v-if="associadoData">
-          <p><strong>Nome:</strong> {{ associadoData.Nome }}</p>
-          <p><strong>Data de Nascimento:</strong> {{ associadoData['Data de Nascimento'] }}</p>
-          <p><strong>CPF:</strong> {{ associadoData.CPF }}</p>
-          <p><strong>CRM:</strong> {{ associadoData.CRM }}</p>
-          <p><strong>Situação de Pagamento:</strong> {{ associadoData['Situação Pagamento'] || 'Não disponível' }}</p>
+          <v-form>
+            <v-row>
+              <v-col cols="12" sm="4">
+                <v-text-field
+                  v-model="associadoData.Nome"
+                  label="Nome"
+                  variant="outlined"
+                  required
+                />
+              </v-col>
+              <v-col cols="12" sm="4">
+                <v-text-field
+                  v-model="associadoData['Data de Nascimento']"
+                  label="Data de Nascimento"
+                  variant="outlined"
+                  mask="##/##/####" 
+                  required
+                />
+              </v-col>
+              <v-col cols="12" sm="4">
+                <v-text-field
+                  v-model="associadoData.CPF"
+                  label="CPF"
+                  variant="outlined"
+                  required
+                />
+              </v-col>
+              <v-col cols="12" sm="4">
+                <v-text-field
+                  v-model="associadoData.CRM"
+                  label="CRM"
+                  variant="outlined"
+                  required
+                />
+              </v-col>
+              <v-col cols="12" sm="4">
+                <v-text-field
+                  v-model="associadoData['Situação Pagamento']"
+                  label="Situação de Pagamento"
+                  variant="outlined"
+                />
+              </v-col>
+            </v-row>
+          </v-form>
         </div>
         <div v-else>
           <p>Carregando detalhes do associado...</p>
         </div>
+        <v-btn
+          class="mt-4"
+          color="primary"
+          @click="saveChanges"
+        >
+          Salvar
+        </v-btn>
       </UiParentCard>
     </v-col>
   </v-row>
