@@ -19,6 +19,11 @@ const AuthRoutes = {
       name: 'Error 404',
       path: '/pages/error',
       component: () => import('@/views/pages/maintenance/error/Error404Page.vue')
+    },
+    {
+      name: 'Pagamento',
+      path: '/payment/generatepayment',
+      component: () => import('@/views/payment/GeneratePayment.vue')
     }
   ]
 };

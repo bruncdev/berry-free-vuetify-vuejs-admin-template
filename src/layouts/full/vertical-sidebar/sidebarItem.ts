@@ -26,24 +26,17 @@ const sidebarItem: menu[] = [
     to: '/dashboard/default'
   },
   { divider: true },
-  // { header: 'Pages' },
-  // {
-  //   title: 'Authentication',
-  //   icon: KeyIcon,
-  //   to: '/auth',
-  //   children: [
-  //     {
-  //       title: 'Login',
-  //       icon: CircleIcon,
-  //       to: '/auth/login'
-  //     },
-  //     {
-  //       title: 'Register',
-  //       icon: CircleIcon,
-  //       to: '/auth/register'
-  //     }
-  //   ]
-  // },
+  { header: 'Pages' },
+  {
+    title: 'Pagamento',
+    to: '/payment',
+    children: [
+      {
+        title: 'Pagamento',
+        to: '/payment/generatepayment'
+      },
+    ]
+  },
   // {
   //   title: 'Error 404',
   //   icon: BugIcon,
