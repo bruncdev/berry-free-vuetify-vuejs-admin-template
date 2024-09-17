@@ -31,15 +31,12 @@ const sidebarItem: menu[] = [
     icon: UsersGroupIcon,
     to: '/dashboard/associados'
   },
-  { divider: true }
-  { divider: true },
-  { header: 'Pages' },
   {
     title: 'Pagamento',
     to: '/payment',
     children: [
       {
-        title: 'Pagamento',
+        title: 'Gerar Pagamento',
         to: '/payment/generatepayment'
       },
     ]
