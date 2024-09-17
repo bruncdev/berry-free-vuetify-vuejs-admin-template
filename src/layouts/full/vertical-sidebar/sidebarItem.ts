@@ -1,5 +1,6 @@
 import {
-  DashboardIcon  
+  DashboardIcon,
+  UsersGroupIcon,
 } from 'vue-tabler-icons';
 
 export interface menu {
@@ -25,6 +26,12 @@ const sidebarItem: menu[] = [
     icon: DashboardIcon,
     to: '/dashboard/default'
   },
+  {
+    title: 'Associados',
+    icon: UsersGroupIcon,
+    to: '/dashboard/associados'
+  },
+  { divider: true }
   { divider: true },
   { header: 'Pages' },
   {

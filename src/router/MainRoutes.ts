@@ -1,3 +1,6 @@
+import Associados from '@/views/dashboards/associados/Associados.vue'
+import AssociadoDetail from '@/views/dashboards/associados/AssociadoDetail.vue'
+
 const MainRoutes = {
   path: '/main',
   meta: {
@@ -45,7 +48,18 @@ const MainRoutes = {
       name: 'Colors',
       path: '/utils/colors',
       component: () => import('@/views/utilities/colors/ColorPage.vue')
-    }
+    },
+    {
+      name: 'Associados',
+      path: '/dashboard/associados',
+      component: Associados,
+    },
+    {
+      name: 'AssociadoDetail',
+      path: '/dashboard/associados/:id',
+      component: AssociadoDetail,
+      props: true,
+    },
   ]
 };
 
