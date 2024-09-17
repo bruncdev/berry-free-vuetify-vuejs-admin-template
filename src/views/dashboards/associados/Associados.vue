@@ -105,6 +105,14 @@ const getChipColor = (status: string) => {
               <v-card-text>
                 <p>Data de Nascimento: {{ item.data_de_nascimento }}</p>
                 <p>CRM: {{ item.crm }}</p>
+                <v-chip
+                  class="mt-5"
+                  :color="getChipColor(item['situacao_pagamento'])"
+                  text-color="white"
+                  dark
+                >
+                  {{ item['situacao_pagamento'] }}
+                </v-chip>
               </v-card-text>
             </v-card>
           </router-link>
