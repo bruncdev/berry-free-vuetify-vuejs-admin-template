@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { ArrowDownLeftCircleIcon, ShoppingCartIcon, CircleArrowDownLeftIcon } from 'vue-tabler-icons';
+import { ArrowDownLeftCircleIcon, UserIcon, CircleArrowDownLeftIcon } from 'vue-tabler-icons';
 
 const tab = ref('1');
 
@@ -125,12 +125,14 @@ const lineChart2 = {
     <v-card-text>
       <div class="d-flex align-start mb-3">
         <v-btn icon rounded="sm" color="darkprimary" variant="flat">
-          <ShoppingCartIcon stroke-width="1.5" width="20" />
+          <!-- <ShoppingCartIcon stroke-width="1.5" width="20" /> -->
+          <UserIcon stroke-width="1.5" width="20" />
+          
         </v-btn>
         <div class="ml-auto z-1">
           <v-tabs v-model="tab" class="theme-tab" density="compact" align-tabs="end">
-            <v-tab value="1" hide-slider color="transparent">Month</v-tab>
-            <v-tab value="2" hide-slider color="transparent">Year</v-tab>
+            <v-tab value="1" hide-slider color="transparent">Mês</v-tab>
+            <v-tab value="2" hide-slider color="transparent">Ano</v-tab>
           </v-tabs>
         </div>
       </div>
@@ -139,12 +141,12 @@ const lineChart2 = {
           <v-row>
             <v-col cols="6">
               <h2 class="text-h1 font-weight-medium">
-                $108
+                108
                 <a href="#">
                   <CircleArrowDownLeftIcon stroke-width="1.5" width="28" class="text-white" />
                 </a>
               </h2>
-              <span class="text-subtitle-1 text-medium-emphasis text-white">Total Order</span>
+              <span class="text-subtitle-1 text-medium-emphasis text-white">Total Solicitação Associados Mensal</span>
             </v-col>
             <v-col cols="6">
               <apexchart type="line" height="90" :options="chartOptions1" :series="lineChart1.series"> </apexchart>
@@ -155,12 +157,12 @@ const lineChart2 = {
           <v-row>
             <v-col cols="6">
               <h2 class="text-h1 font-weight-medium">
-                $961
+                961
                 <a href="#">
                   <ArrowDownLeftCircleIcon stroke-width="1.5" width="28" class="text-white" />
                 </a>
               </h2>
-              <span class="text-subtitle-1 text-medium-emphasis text-white">Total Order</span>
+              <span class="text-subtitle-1 text-medium-emphasis text-white">Total Solicitação Associados Anual</span>
             </v-col>
             <v-col cols="6">
               <apexchart type="line" height="90" :options="chartOptions2" :series="lineChart2.series"> </apexchart>
