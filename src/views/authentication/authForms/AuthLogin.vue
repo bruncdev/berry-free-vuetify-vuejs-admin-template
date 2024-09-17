@@ -7,13 +7,13 @@ const checkbox = ref(false);
 const valid = ref(false);
 const show1 = ref(false);
 //const logform = ref();
-const password = ref('admin123');
-const username = ref('info@codedthemes.com');
+const password = ref('45239240663');
+const username = ref('enoch.j.loes@gmail.com');
 const passwordRules = ref([
-  (v: string) => !!v || 'Password is required',
-  (v: string) => (v && v.length <= 10) || 'Password must be less than 10 characters'
+  (v: string) => !!v || 'Insira a senha',
+  (v: string) => (v && v.length <= 11) || 'A senha deve contar 11 caracteres ou menos'
 ]);
-const emailRules = ref([(v: string) => !!v || 'E-mail is required', (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
+const emailRules = ref([(v: string) => !!v || 'Insira o e-mail', (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 function validate(values: any, { setErrors }: any) {
