@@ -1,242 +1,242 @@
 export const associadosData = [
     {
       "id": 1,
-      "Nome": "Ana Paula",
-      "Data de Nascimento": "1980-05-12",
-      "CPF": "123.456.789-00",
-      "CRM": "CRM12345",
-      "Situação Pagamento": "Pendente"
+      "nome": "Ana Paula",
+      "data_de_nascimento": "1980-05-12",
+      "cpf": "123.456.789-00",
+      "crm": "CRM12345",
+      "situacao_pagamento": "Pendente"
     },
     {
       "id": 2,
-      "Nome": "Bruno Silva",
-      "Data de Nascimento": "1975-08-30",
-      "CPF": "234.567.890-11",
-      "CRM": "CRM23456",
-      "Situação Pagamento": "Pago"
+      "nome": "Bruno Silva",
+      "data_de_nascimento": "1975-08-30",
+      "cpf": "234.567.890-11",
+      "crm": "CRM23456",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 3,
-      "Nome": "Carlos Eduardo",
-      "Data de Nascimento": "1983-03-22",
-      "CPF": "345.678.901-22",
-      "CRM": "CRM34567",
-      "Situação Pagamento": "Inadimplente"
+      "nome": "Carlos Eduardo",
+      "data_de_nascimento": "1983-03-22",
+      "cpf": "345.678.901-22",
+      "crm": "CRM34567",
+      "situacao_pagamento": "Inadimplente"
     },
     {
       "id": 4,
-      "Nome": "Daniela Souza",
-      "Data de Nascimento": "1990-01-17",
-      "CPF": "456.789.012-33",
-      "CRM": "CRM45678",
-      "Situação Pagamento": "Pendente"
+      "nome": "Daniela Souza",
+      "data_de_nascimento": "1990-01-17",
+      "cpf": "456.789.012-33",
+      "crm": "CRM45678",
+      "situacao_pagamento": "Pendente"
     },
     {
       "id": 5,
-      "Nome": "Eduardo Lima",
-      "Data de Nascimento": "1978-07-14",
-      "CPF": "567.890.123-44",
-      "CRM": "CRM56789",
-      "Situação Pagamento": "Pago"
+      "nome": "Eduardo Lima",
+      "data_de_nascimento": "1978-07-14",
+      "cpf": "567.890.123-44",
+      "crm": "CRM56789",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 6,
-      "Nome": "Fernanda Oliveira",
-      "Data de Nascimento": "1985-09-06",
-      "CPF": "678.901.234-55",
-      "CRM": "CRM67890",
-      "Situação Pagamento": "Pendente"
+      "nome": "Fernanda Oliveira",
+      "data_de_nascimento": "1985-09-06",
+      "cpf": "678.901.234-55",
+      "crm": "CRM67890",
+      "situacao_pagamento": "Pendente"
     },
     {
       "id": 7,
-      "Nome": "Gustavo Martins",
-      "Data de Nascimento": "1992-11-19",
-      "CPF": "789.012.345-66",
-      "CRM": "CRM78901",
-      "Situação Pagamento": "Pago"
+      "nome": "Gustavo Martins",
+      "data_de_nascimento": "1992-11-19",
+      "cpf": "789.012.345-66",
+      "crm": "CRM78901",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 8,
-      "Nome": "Helena Costa",
-      "Data de Nascimento": "1970-12-25",
-      "CPF": "890.123.456-77",
-      "CRM": "CRM89012",
-      "Situação Pagamento": "Inadimplente"
+      "nome": "Helena Costa",
+      "data_de_nascimento": "1970-12-25",
+      "cpf": "890.123.456-77",
+      "crm": "CRM89012",
+      "situacao_pagamento": "Inadimplente"
     },
     {
       "id": 9,
-      "Nome": "Isabela Almeida",
-      "Data de Nascimento": "1988-04-05",
-      "CPF": "901.234.567-88",
-      "CRM": "CRM90123",
-      "Situação Pagamento": "Pago"
+      "nome": "Isabela Almeida",
+      "data_de_nascimento": "1988-04-05",
+      "cpf": "901.234.567-88",
+      "crm": "CRM90123",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 10,
-      "Nome": "João Pedro",
-      "Data de Nascimento": "1981-10-11",
-      "CPF": "012.345.678-99",
-      "CRM": "CRM01234",
-      "Situação Pagamento": "Pendente"
+      "nome": "João Pedro",
+      "data_de_nascimento": "1981-10-11",
+      "cpf": "012.345.678-99",
+      "crm": "CRM01234",
+      "situacao_pagamento": "Pendente"
     },
     {
       "id": 11,
-      "Nome": "Karina Lopes",
-      "Data de Nascimento": "1974-06-08",
-      "CPF": "123.456.789-00",
-      "CRM": "CRM12345",
-      "Situação Pagamento": "Pago"
+      "nome": "Karina Lopes",
+      "data_de_nascimento": "1974-06-08",
+      "cpf": "123.456.789-00",
+      "crm": "CRM12345",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 12,
-      "Nome": "Lucas Ferreira",
-      "Data de Nascimento": "1993-02-03",
-      "CPF": "234.567.890-11",
-      "CRM": "CRM23456",
-      "Situação Pagamento": "Inadimplente"
+      "nome": "Lucas Ferreira",
+      "data_de_nascimento": "1993-02-03",
+      "cpf": "234.567.890-11",
+      "crm": "CRM23456",
+      "situacao_pagamento": "Inadimplente"
     },
     {
       "id": 13,
-      "Nome": "Mariana Rocha",
-      "Data de Nascimento": "1989-09-15",
-      "CPF": "345.678.901-22",
-      "CRM": "CRM34567",
-      "Situação Pagamento": "Pendente"
+      "nome": "Mariana Rocha",
+      "data_de_nascimento": "1989-09-15",
+      "cpf": "345.678.901-22",
+      "crm": "CRM34567",
+      "situacao_pagamento": "Pendente"
     },
     {
       "id": 14,
-      "Nome": "Nicolas Santos",
-      "Data de Nascimento": "1987-07-21",
-      "CPF": "456.789.012-33",
-      "CRM": "CRM45678",
-      "Situação Pagamento": "Pago"
+      "nome": "Nicolas Santos",
+      "data_de_nascimento": "1987-07-21",
+      "cpf": "456.789.012-33",
+      "crm": "CRM45678",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 15,
-      "Nome": "Olivia Andrade",
-      "Data de Nascimento": "1984-12-12",
-      "CPF": "567.890.123-44",
-      "CRM": "CRM56789",
-      "Situação Pagamento": "Inadimplente"
+      "nome": "Olivia Andrade",
+      "data_de_nascimento": "1984-12-12",
+      "cpf": "567.890.123-44",
+      "crm": "CRM56789",
+      "situacao_pagamento": "Inadimplente"
     },
     {
       "id": 16,
-      "Nome": "Pedro Henrique",
-      "Data de Nascimento": "1979-03-09",
-      "CPF": "678.901.234-55",
-      "CRM": "CRM67890",
-      "Situação Pagamento": "Pendente"
+      "nome": "Pedro Henrique",
+      "data_de_nascimento": "1979-03-09",
+      "cpf": "678.901.234-55",
+      "crm": "CRM67890",
+      "situacao_pagamento": "Pendente"
     },
     {
       "id": 17,
-      "Nome": "Quintino Vasconcelos",
-      "Data de Nascimento": "1968-05-16",
-      "CPF": "789.012.345-66",
-      "CRM": "CRM78901",
-      "Situação Pagamento": "Pago"
+      "nome": "Quintino Vasconcelos",
+      "data_de_nascimento": "1968-05-16",
+      "cpf": "789.012.345-66",
+      "crm": "CRM78901",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 18,
-      "Nome": "Roberta Melo",
-      "Data de Nascimento": "1991-10-22",
-      "CPF": "890.123.456-77",
-      "CRM": "CRM89012",
-      "Situação Pagamento": "Inadimplente"
+      "nome": "Roberta Melo",
+      "data_de_nascimento": "1991-10-22",
+      "cpf": "890.123.456-77",
+      "crm": "CRM89012",
+      "situacao_pagamento": "Inadimplente"
     },
     {
       "id": 19,
-      "Nome": "Sergio Matos",
-      "Data de Nascimento": "1982-08-07",
-      "CPF": "901.234.567-88",
-      "CRM": "CRM90123",
-      "Situação Pagamento": "Pendente"
+      "nome": "Sergio Matos",
+      "data_de_nascimento": "1982-08-07",
+      "cpf": "901.234.567-88",
+      "crm": "CRM90123",
+      "situacao_pagamento": "Pendente"
     },
     {
       "id": 20,
-      "Nome": "Tatiana Rezende",
-      "Data de Nascimento": "1995-01-14",
-      "CPF": "012.345.678-99",
-      "CRM": "CRM01234",
-      "Situação Pagamento": "Pago"
+      "nome": "Tatiana Rezende",
+      "data_de_nascimento": "1995-01-14",
+      "cpf": "012.345.678-99",
+      "crm": "CRM01234",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 21,
-      "Nome": "Ursula Pereira",
-      "Data de Nascimento": "1973-04-29",
-      "CPF": "123.456.789-00",
-      "CRM": "CRM12345",
-      "Situação Pagamento": "Inadimplente"
+      "nome": "Ursula Pereira",
+      "data_de_nascimento": "1973-04-29",
+      "cpf": "123.456.789-00",
+      "crm": "CRM12345",
+      "situacao_pagamento": "Inadimplente"
     },
     {
       "id": 22,
-      "Nome": "Victor Barbosa",
-      "Data de Nascimento": "1986-06-18",
-      "CPF": "234.567.890-11",
-      "CRM": "CRM23456",
-      "Situação Pagamento": "Pendente"
+      "nome": "Victor Barbosa",
+      "data_de_nascimento": "1986-06-18",
+      "cpf": "234.567.890-11",
+      "crm": "CRM23456",
+      "situacao_pagamento": "Pendente"
     },
     {
       "id": 23,
-      "Nome": "Wagner Souza",
-      "Data de Nascimento": "1990-02-26",
-      "CPF": "345.678.901-22",
-      "CRM": "CRM34567",
-      "Situação Pagamento": "Pago"
+      "nome": "Wagner Souza",
+      "data_de_nascimento": "1990-02-26",
+      "cpf": "345.678.901-22",
+      "crm": "CRM34567",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 24,
-      "Nome": "Xavier Neves",
-      "Data de Nascimento": "1980-11-09",
-      "CPF": "456.789.012-33",
-      "CRM": "CRM45678",
-      "Situação Pagamento": "Inadimplente"
+      "nome": "Xavier Neves",
+      "data_de_nascimento": "1980-11-09",
+      "cpf": "456.789.012-33",
+      "crm": "CRM45678",
+      "situacao_pagamento": "Inadimplente"
     },
     {
       "id": 25,
-      "Nome": "Yasmin Borges",
-      "Data de Nascimento": "1983-07-13",
-      "CPF": "567.890.123-44",
-      "CRM": "CRM56789",
-      "Situação Pagamento": "Pendente"
+      "nome": "Yasmin Borges",
+      "data_de_nascimento": "1983-07-13",
+      "cpf": "567.890.123-44",
+      "crm": "CRM56789",
+      "situacao_pagamento": "Pendente"
     },
     {
       "id": 26,
-      "Nome": "Zuleika Cardoso",
-      "Data de Nascimento": "1992-05-30",
-      "CPF": "678.901.234-55",
-      "CRM": "CRM67890",
-      "Situação Pagamento": "Pago"
+      "nome": "Zuleika Cardoso",
+      "data_de_nascimento": "1992-05-30",
+      "cpf": "678.901.234-55",
+      "crm": "CRM67890",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 27,
-      "Nome": "Alexandre Gomes",
-      "Data de Nascimento": "1976-03-12",
-      "CPF": "789.012.345-66",
-      "CRM": "CRM78901",
-      "Situação Pagamento": "Inadimplente"
+      "nome": "Alexandre Gomes",
+      "data_de_nascimento": "1976-03-12",
+      "cpf": "789.012.345-66",
+      "crm": "CRM78901",
+      "situacao_pagamento": "Inadimplente"
     },
     {
       "id": 28,
-      "Nome": "Bianca Ramos",
-      "Data de Nascimento": "1989-09-25",
-      "CPF": "890.123.456-77",
-      "CRM": "CRM89012",
-      "Situação Pagamento": "Pendente"
+      "nome": "Bianca Ramos",
+      "data_de_nascimento": "1989-09-25",
+      "cpf": "890.123.456-77",
+      "crm": "CRM89012",
+      "situacao_pagamento": "Pendente"
     },
     {
       "id": 29,
-      "Nome": "Caio Nunes",
-      "Data de Nascimento": "1984-08-03",
-      "CPF": "901.234.567-88",
-      "CRM": "CRM90123",
-      "Situação Pagamento": "Pago"
+      "nome": "Caio Nunes",
+      "data_de_nascimento": "1984-08-03",
+      "cpf": "901.234.567-88",
+      "crm": "CRM90123",
+      "situacao_pagamento": "Pago"
     },
     {
       "id": 30,
-      "Nome": "Diana Farias",
-      "Data de Nascimento": "1991-02-17",
-      "CPF": "012.345.678-99",
-      "CRM": "CRM01234",
-      "Situação Pagamento": "Inadimplente"
+      "nome": "Diana Farias",
+      "data_de_nascimento": "1991-02-17",
+      "cpf": "012.345.678-99",
+      "crm": "CRM01234",
+      "situacao_pagamento": "Inadimplente"
     }
 ];

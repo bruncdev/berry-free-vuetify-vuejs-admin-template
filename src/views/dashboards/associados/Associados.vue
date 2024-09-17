@@ -39,6 +39,18 @@ const paginatedItems = computed(() => {
 
 const totalPages = computed(() => Math.ceil(items.value.length / itemsPerPage));
 
+const getChipColor = (status: string) => {
+  switch (status) {
+    case 'Pago':
+      return 'green';
+    case 'Pendente':
+      return 'orange';
+    case 'Inadimplente':
+      return 'red';
+    default:
+      return 'grey';
+  }
+};
 </script>
 
 <template>
@@ -49,16 +61,26 @@ const totalPages = computed(() => Math.ceil(items.value.length / itemsPerPage));
         class="rounded text"
         :items="paginatedItems"
         :headers="[
-            { title: 'Nome', key: 'Nome' },
-            { title: 'Data de Nascimento', key: 'Data de Nascimento' },
-            { title: 'CPF', key: 'CPF' },
-            { title: 'CRM', key: 'CRM' },
+            { title: 'Nome', key: 'nome' },
+            { title: 'Data de Nascimento', key: 'data_de_nascimento' },
+            { title: 'CPF', key: 'cpf' },
+            { title: 'CRM', key: 'crm' },
+            { title: 'Situação do Pagamento', key: 'situacao_pagamento' },
             { title: 'Ação', key: 'actions', sortable: false }
         ]"
         :hide-default-footer="true"
     >
-      <template #item.dataDeNascimento="{ item }">
-          {{ item['Data de Nascimento'] }}
+      <template #item.data_de_nascimento="{ item }">
+          {{ item['data_de_nascimento'] }}
+      </template>
+      <template #item.situacao_pagamento="{ item }">
+        <v-chip
+          :color="getChipColor(item['situacao_pagamento'])"
+          text-color="white"
+          dark
+        >
+          {{ item['situacao_pagamento'] }}
+        </v-chip>
       </template>
       <template #item.actions="{ item }">
         <router-link :to="{ name: 'AssociadoDetail', params: { id: item.id } }" style="text-decoration: none; color: inherit;">
