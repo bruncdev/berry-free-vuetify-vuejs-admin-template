@@ -8,7 +8,7 @@ import BaseBreadcrumb from '@/components/shared/BaseBreadcrumb.vue';
 import { useRouter } from 'vue-router';
 
 const { smAndDown } = useDisplay();
-const router = useRouter();
+const router = useRouter()
 
 const items = ref(
   associadosData.map(associado => ({
@@ -61,7 +61,7 @@ const totalPages = computed(() => Math.ceil(items.value.length / itemsPerPage));
           {{ item['Data de Nascimento'] }}
       </template>
       <template #item.actions="{ item }">
-        <router-link :to="`/dashboard/associados/${item.id}`" style="text-decoration: none; color: inherit;">
+        <router-link :to="{ name: 'AssociadoDetail', params: { id: item.id } }" style="text-decoration: none; color: inherit;">
           <EyeIcon class="icon" />
         </router-link>
       </template>

@@ -1,3 +1,6 @@
+import Associados from '@/views/dashboards/associados/Associados.vue'
+import AssociadoDetail from '@/views/dashboards/associados/AssociadoDetail.vue'
+
 const MainRoutes = {
   path: '/main',
   meta: {
@@ -49,7 +52,13 @@ const MainRoutes = {
     {
       name: 'Associados',
       path: '/dashboard/associados',
-      component: () => import('@/views/dashboards/associados/Associados.vue')
+      component: Associados,
+    },
+    {
+      name: 'AssociadoDetail',
+      path: '/dashboard/associados/:id',
+      component: AssociadoDetail,
+      props: true,
     },
   ]
 };
