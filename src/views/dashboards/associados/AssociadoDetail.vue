@@ -45,7 +45,7 @@ const breadcrumbs = computed(() => [
     href: '/dashboard/associados'
   },
   {
-    title: associadoData.value?.Nome || 'Detalhes',
+    title: associadoData.value?.nome || 'Detalhes',
     disabled: true,
     href: `/dashboard/associados/${id}`
   },
@@ -66,13 +66,13 @@ const saveChanges = () => {
 
   <v-row>
     <v-col cols="12" md="12">
-      <UiParentCard :title="associadoData?.Nome || 'Detalhes do Associado'">
+      <UiParentCard :title="associadoData?.nome || 'Detalhes do Associado'">
         <div v-if="associadoData">
           <v-form>
             <v-row>
               <v-col cols="12" sm="4">
                 <v-text-field
-                  v-model="associadoData.Nome"
+                  v-model="associadoData.nome"
                   label="Nome"
                   variant="outlined"
                   required
@@ -80,7 +80,7 @@ const saveChanges = () => {
               </v-col>
               <v-col cols="12" sm="4">
                 <v-text-field
-                  v-model="associadoData['Data de Nascimento']"
+                  v-model="associadoData.data_de_nascimento"
                   label="Data de Nascimento"
                   variant="outlined"
                   mask="##/##/####" 
@@ -89,7 +89,7 @@ const saveChanges = () => {
               </v-col>
               <v-col cols="12" sm="4">
                 <v-text-field
-                  v-model="associadoData.CPF"
+                  v-model="associadoData.cpf"
                   label="CPF"
                   variant="outlined"
                   required
@@ -97,7 +97,7 @@ const saveChanges = () => {
               </v-col>
               <v-col cols="12" sm="4">
                 <v-text-field
-                  v-model="associadoData.CRM"
+                  v-model="associadoData.crm"
                   label="CRM"
                   variant="outlined"
                   required
@@ -105,7 +105,7 @@ const saveChanges = () => {
               </v-col>
               <v-col cols="12" sm="4">
                 <v-text-field
-                  v-model="associadoData['Situação Pagamento']"
+                  v-model="associadoData.situacao_pagamento"
                   label="Situação de Pagamento"
                   variant="outlined"
                 />

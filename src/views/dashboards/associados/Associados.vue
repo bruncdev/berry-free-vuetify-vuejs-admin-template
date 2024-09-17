@@ -100,11 +100,11 @@ const getChipColor = (status: string) => {
         >
           <router-link :to="`/dashboard/associados/${item.id}`" class="v-link" style="text-decoration: none; color: inherit;">
             <v-card class="mb-4 rounded clickable-card">
-              <v-card-title>{{ item.Nome }}</v-card-title>
-              <v-card-subtitle>CPF: {{ item.CPF }}</v-card-subtitle>
+              <v-card-title>{{ item.nome }}</v-card-title>
+              <v-card-subtitle>CPF: {{ item.cpf }}</v-card-subtitle>
               <v-card-text>
-                <p>Data de Nascimento: {{ item['Data de Nascimento'] }}</p>
-                <p>CRM: {{ item.CRM }}</p>
+                <p>Data de Nascimento: {{ item.data_de_nascimento }}</p>
+                <p>CRM: {{ item.crm }}</p>
               </v-card-text>
             </v-card>
           </router-link>
